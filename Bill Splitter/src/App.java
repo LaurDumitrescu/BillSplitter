@@ -23,10 +23,11 @@ public class App extends JFrame {
         setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         panel = new JPanel();
+        this.setContentPane(panel);
 
         tfName = new JTextField("Name");
         panel.add(tfName);
-        this.setContentPane(panel);
+        
         tfName.setPreferredSize(new Dimension(120, 25));
         tfName.setVisible(true);
 
